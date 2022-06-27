@@ -1,7 +1,7 @@
 name: test_GitHubCI
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   cron:
@@ -60,7 +60,7 @@ jobs:
 
         # If this input is set, the action will push the commit to a new branch with this name.
         # Default: ''
-        branch: master
+        #branch: master
 
         # The way the action should handle pathspec errors from the add and remove commands. Three options are available:
         # - ignore -> errors will be logged but the step won't fail
