@@ -1,7 +1,6 @@
 name: test_GitHubCI
-on:
-  schedule:
-      - cron:  "15 * * * *"
+on: push
+
 
 jobs:
   recupdata:
