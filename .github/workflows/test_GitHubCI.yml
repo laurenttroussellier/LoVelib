@@ -4,7 +4,7 @@ on:
     - cron: "*/5 * * * *"
 
 jobs:
-  recupdata:
+  cron:
    runs-on: ubuntu-latest
    steps:
 
