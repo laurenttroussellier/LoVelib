@@ -1,6 +1,6 @@
-requests~=2.27.1
+requests
 
-pandas~=1.4.2
-holoviews~=1.14.8
-bokeh~=2.4.2
-numpy~=1.22.3
+pandas
+holoviews
+bokeh
+numpy
