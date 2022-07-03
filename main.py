@@ -19,18 +19,13 @@ def GetDataAndSave():
                 infos[i]["last_reported"] = bikeinfosstation["last_reported"]
                 break
 
-    # print(infos[0:3])
-
+    
     with open("data/" + str(si["lastUpdatedOther"]) + ".csv", 'w', encoding='utf8', newline='\n') as output_file:
         dict_writer = csv.DictWriter(output_file, fieldnames=infos[0].keys(), extrasaction='ignore')
         dict_writer.writeheader()
         dict_writer.writerows(infos)
 
-    #print(datetime.fromtimestamp(si["lastUpdatedOther"]), " encore valable : ", str(si["ttl"]), " s")
-
 
 if __name__ == '__main__':
     GetDataAndSave()
-    #PlotLast()
-    #testOSM()
-    #testFolium()
+
