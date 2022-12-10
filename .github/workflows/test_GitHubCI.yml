@@ -1,7 +1,7 @@
 name: test_GitHubCI
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '15 * * * *'
 
 jobs:
   cron:
